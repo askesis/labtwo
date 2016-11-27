@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>VKPhotosGeoLocation</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+
+function initMap() {
+  /* Координаты Ростова-на-Дону */
+  var myLatLng = {lat: 47.14, lng: 39.42};
+
+  /* Создание карты отцентрованной на заданных координатах */
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 4,
+    center: myLatLng
+  });
+  new google.maps.Marker({position: {lat: 32.021044, lng: 34.738703}, map: map }); 
+new google.maps.Marker({position: {lat: 32.021056, lng: 34.738683}, map: map }); 
+new google.maps.Marker({position: {lat: 32.021044, lng: 34.738703}, map: map }); 
+new google.maps.Marker({position: {lat: 32.02126, lng: 34.738639}, map: map }); 
+new google.maps.Marker({position: {lat: 32.021823, lng: 34.73859}, map: map }); 
+new google.maps.Marker({position: {lat: 32.020829, lng: 34.739157}, map: map }); 
+new google.maps.Marker({position: {lat: 31.963896, lng: 34.805037}, map: map }); 
+new google.maps.Marker({position: {lat: 31.963507, lng: 34.805049}, map: map }); 
+new google.maps.Marker({position: {lat: 31.963832, lng: 34.805015}, map: map }); 
+new google.maps.Marker({position: {lat: 31.964228, lng: 34.804949}, map: map }); 
+new google.maps.Marker({position: {lat: 31.964198, lng: 34.804655}, map: map }); 
+new google.maps.Marker({position: {lat: 31.963656, lng: 34.81006}, map: map }); 
+new google.maps.Marker({position: {lat: 29.550217, lng: 34.964499}, map: map }); 
+new google.maps.Marker({position: {lat: 29.550038, lng: 34.96467}, map: map }); 
+new google.maps.Marker({position: {lat: 29.54834, lng: 34.963248}, map: map }); 
+new google.maps.Marker({position: {lat: 29.547993, lng: 34.963655}, map: map }); 
+new google.maps.Marker({position: {lat: 29.561685, lng: 34.964962}, map: map }); 
+new google.maps.Marker({position: {lat: 29.549906, lng: 34.963333}, map: map }); 
+new google.maps.Marker({position: {lat: 29.548114, lng: 34.965011}, map: map }); 
+new google.maps.Marker({position: {lat: 29.550598, lng: 34.964691}, map: map }); 
+new google.maps.Marker({position: {lat: 29.547644, lng: 34.96472}, map: map }); 
+new google.maps.Marker({position: {lat: 29.547931, lng: 34.964779}, map: map }); 
+new google.maps.Marker({position: {lat: 29.548199, lng: 34.964421}, map: map }); 
+new google.maps.Marker({position: {lat: 48.566469, lng: 39.343719}, map: map }); 
+new google.maps.Marker({position: {lat: 49.987789, lng: 36.230628}, map: map }); 
+new google.maps.Marker({position: {lat: 48.160588, lng: 24.498496}, map: map }); 
+new google.maps.Marker({position: {lat: 47.218699, lng: 38.928078}, map: map }); 
+new google.maps.Marker({position: {lat: 47.223617, lng: 39.713623}, map: map }); 
+new google.maps.Marker({position: {lat: 47.22724, lng: 39.724449}, map: map }); 
+new google.maps.Marker({position: {lat: 47.219468, lng: 39.716665}, map: map }); 
+new google.maps.Marker({position: {lat: 47.000007, lng: 38.999986}, map: map }); 
+new google.maps.Marker({position: {lat: 47.000007, lng: 38.999986}, map: map }); 
+new google.maps.Marker({position: {lat: 47.000007, lng: 38.999986}, map: map }); 
+
+}
+
+    </script>
+    <!-- Здесь добавляем API ключ -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtFxupipnj7R2ypPbAp_ogJUkf7HDiCjY&signed_in=true&callback=initMap"></script>
+  </body>
+</html>
